@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:rgba(20, 202, 223, 0.788);
+}
+
+.container {
+    text-align: center;
+}
+
+#chessboard {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #333;
+    position: relative;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.black {
+    background-color: #333;
+}
+
+.piece {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}

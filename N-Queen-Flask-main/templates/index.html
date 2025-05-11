@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N-Queen & Knight’s Tour Solver</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>N-Queen & Knight’s Tour Solver Simulation</h1>
+        <label for="n-input">Enter N (Size of the board): </label>
+        <input type="number" id="n-input" min="4" max="20" value="4">
+        
+        <label for="problem-select">Select Problem:</label>
+        <select id="problem-select">
+            <option value="queen">N-Queen</option>
+            <option value="knight_tour">Knight's Tour</option>
+        </select>
+        
+        <button onclick="startSimulation()">Start Simulation</button>
+
+        <div id="chessboard"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='nqueen_knight.js') }}"></script>
+</body>
+</html>
